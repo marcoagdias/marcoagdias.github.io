@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Antonio Galdino Dias - Desenvolvedor Web & Mobile</title>
+    <meta name="description" content="Portfólio de Marco Antonio Galdino Dias - Desenvolvedor Web & Mobile especializado em TypeScript, React Native, PHP/Laravel e JavaScript.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Marco Antonio</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Olá, eu sou <span class="highlight">Marco Antonio</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desenvolvedor Web & Mobile</h2>
+                    <p class="hero-description">
+                        Especializado em criar aplicações web e mobile modernas usando TypeScript, React Native, PHP/Laravel e JavaScript. 
+                        Transformo ideias em soluções digitais funcionais e elegantes.
+                    </p>
+                    <div class="hero-location">
+                        <i data-lucide="map-pin"></i>
+                        <span>Uberaba, Minas Gerais</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/marcoagdias" target="_blank" class="social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/marcoantoniogdias" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <img src="https://github.com/marcoagdias.png" alt="Marco Antonio Galdino Dias" class="avatar-img">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card" data-tech="TypeScript">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div class="floating-card" data-tech="React">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div class="floating-card" data-tech="Laravel">
+                            <i data-lucide="server"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Desenvolvedor apaixonado por tecnologia e inovação</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Sou um desenvolvedor full-stack com experiência em desenvolvimento web e mobile. 
+                        Tenho paixão por criar soluções digitais que fazem a diferença na vida das pessoas.
+                    </p>
+                    <p>
+                        Minha jornada na programação começou na faculdade, onde desenvolvi projetos acadêmicos 
+                        que me permitiram explorar diferentes tecnologias e frameworks. Desde então, venho 
+                        aprimorando minhas habilidades e trabalhando em projetos que desafiam minha criatividade 
+                        e conhecimento técnico.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24</span>
+                            <span class="stat-label">Contribuições</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Tecnologias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <h3>Foco em Qualidade</h3>
+                        <p>Código limpo, performance otimizada e experiência do usuário excepcional.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Aprendizado Contínuo</h3>
+                        <p>Sempre atualizado com as últimas tendências e melhores práticas do mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-subtitle">Alguns dos trabalhos que desenvolvi</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PetAdoption Frontend -->
+                <div class="project-card" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="heart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PetAdoption Frontend</h3>
+                        <p class="project-description">
+                            Aplicação web para cadastro de pets desenvolvida como projeto de conclusão de curso. 
+                            Interface moderna com integração de mapas e sistema de gerenciamento.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Leaflet</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/marcoagdias/petadoption-frontend" target="_blank" class="project-link">
+                                <i data-lucide="github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previsão do Tempo -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">App Previsão do Tempo</h3>
+                        <p class="project-description">
+                            Aplicativo web responsivo para consulta de previsão do tempo com interface 
+                            intuitiva e integração com APIs de clima.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/marcoagdias/previsaodotempo" target="_blank" class="project-link">
+                                <i data-lucide="github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Girolando -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projeto Girolando</h3>
+                        <p class="project-description">
+                            Sistema web completo desenvolvido com Laravel e SQL Server, 
+                            demonstrando habilidades em desenvolvimento full-stack.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Blade</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/marcoagdias/proj_girolando" target="_blank" class="project-link">
+                                <i data-lucide="github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto N Solutions -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="settings"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projeto N' Solutions</h3>
+                        <p class="project-description">
+                            Website com operações CRUD desenvolvido em Laravel, 
+                            demonstrando conhecimentos em desenvolvimento web e banco de dados.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Blade</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/marcoagdias/projeto_nsolutions" target="_blank" class="project-link">
+                                <i data-lucide="github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculadora Nativa -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="calculator"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Calculadora Nativa</h3>
+                        <p class="project-description">
+                            Aplicativo móvel de calculadora desenvolvido com NativeScript, 
+                            demonstrando habilidades em desenvolvimento mobile multiplataforma.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">NativeScript</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/marcoagdias/calculadora_nativa" target="_blank" class="project-link">
+                                <i data-lucide="github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias que domino e utilizo em meus projetos</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i data-lucide="monitor"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React Native</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i data-lucide="server"></i>
+                        Backend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i data-lucide="database"></i>
+                        Banco de Dados
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i data-lucide="smartphone"></i>
+                        Mobile
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React Native</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NativeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localização</h3>
+                            <p>Uberaba, Minas Gerais</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/marcoagdias" target="_blank">@marcoagdias</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/marcoantoniogdias" target="_blank">Marco Antonio Galdino Dias</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i data-lucide="send"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Marco Antonio Galdino Dias. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/marcoagdias" target="_blank" class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/marcoantoniogdias" target="_blank" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
