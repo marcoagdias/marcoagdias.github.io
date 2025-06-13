@@ -286,7 +286,7 @@ function initTypingAnimation() {
             // Add highlight to name
             const finalText = titleElement.innerHTML.replace(
                 highlightText, 
-                `<span class="highlight">${highlightText}</span>`
+                `<br><span class="highlight">${highlightText}</span>`
             );
             titleElement.innerHTML = finalText;
         }
