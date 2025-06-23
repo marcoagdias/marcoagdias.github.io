@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initProjectFilters();
     initSkillBars();
-    initContactForm();
 });
 
 // Navigation functionality
@@ -152,50 +151,6 @@ function initSkillBars() {
 
     skillBars.forEach(bar => {
         skillObserver.observe(bar);
-    });
-}
-
-// Contact form
-function initContactForm() {
-    const form = document.getElementById('contact-form');
-    
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const submitButton = form.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
-        
-        // Show loading state
-        submitButton.innerHTML = '<i data-lucide="loader-2"></i> Enviando...';
-        submitButton.disabled = true;
-        lucide.createIcons();
-        
-        // Get form data
-        const formData = new FormData(form);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
-        
-        try {
-            // Simulate form submission (replace with actual endpoint)
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            // Show success message
-            showNotification('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
-            form.reset();
-            
-        } catch (error) {
-            // Show error message
-            showNotification('Erro ao enviar mensagem. Tente novamente ou entre em contato diretamente.', 'error');
-        } finally {
-            // Reset button
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-            lucide.createIcons();
-        }
     });
 }
 
